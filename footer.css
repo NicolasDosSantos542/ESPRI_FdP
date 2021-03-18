@@ -1,5 +1,5 @@
 #footer{
-    height: 200px;
+    height: 100%;
 }
 #maxime
 {
@@ -12,4 +12,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+#keyword-container{
+    border: 3px dotted #ff1313;
+    border-radius: 45px;
+    width: 100%;
+
+}
+#keywords-de-saison{
+    display: flex;
+}
+#token-left
+{
+    position: relative;
+    left: 60px  ;
+   
+}
+#token-right{
+    position: relative;
+
+    right: 60px;
+
 }

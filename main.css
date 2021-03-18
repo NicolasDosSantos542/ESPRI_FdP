@@ -45,7 +45,7 @@ table {
 
 .espace-tables {  /*correspond au carde de la parties "tables*/
     grid-column: 1/ span 8;
-    grid-row: 1 / span 13;
+    grid-row: 1 / span 8;
 
 }
 .devotion-text {
@@ -119,13 +119,15 @@ table {
 }
 
 .seven {
-    grid-column: 9 /span 12;
-    grid-row: 7 / span 6;
+    grid-column: 10 /span 12;
+    grid-row: 7;
     margin-left: 15px;
 }
 
+
 .magie-materiel {
     display: flex;
+
 }
 
 .magie-materiel > div {
