@@ -7,6 +7,9 @@
     color: white;
     font-size: 0.7em;
     text-align: center;
+    min-height: 2em;
+    box-shadow: 0 0 0.3em 0.3em white inset;
+    padding: 0.5em;
 }
 .keyword{
     display: flex;
@@ -25,12 +28,12 @@
 #token-left
 {
     position: relative;
-    left: 60px  ;
-   
+    left: 70px  ;
+
 }
 #token-right{
     position: relative;
 
-    right: 60px;
+    right: 70px;
 
 }

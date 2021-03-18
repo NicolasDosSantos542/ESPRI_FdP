@@ -25,6 +25,7 @@ table {
     width: 50%;
     margin: 10px;
     border-radius: 25px;
+    padding: 10px;
 }
 #harmonie{
     border: 4px solid #d9d9d9;
@@ -63,8 +64,10 @@ table {
     justify-content: space-between;
 }
 .saison-gauche{
-    height: 80px;
-    width: 80px;
+    min-height: 80px;
+    max-height:80px;
+    max-width: 80px;
+    min-width: 80px;
     border-radius: 50%;
     border: 1px solid;
     position: relative;
@@ -72,13 +75,19 @@ table {
     right: 0;
 }
 .saison-droite{
-    height: 80px;
-    width: 80px;
+    min-height: 80px;
+    max-height:80px;
+    max-width: 80px;
+    min-width: 80px;
     border-radius: 50%;
     border: 1px solid;
     position: relative;
     top: 2px;
-    right: 0px;
+    right: 0;
+}
+.saison-texte{
+font-size: 0.8em;
+    text-align: center;
 }
 .nymphe{
     border-radius: 50%;

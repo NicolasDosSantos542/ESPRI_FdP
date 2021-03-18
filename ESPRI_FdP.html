@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>Fiche de perso ESPRI</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <link href="head.css" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
-    <link href="footer.css" rel="stylesheet">
+    <script src="fdp-ressources/script/script.js"></script>
+    <link href="fdp-ressources/style/head.css" rel="stylesheet">
+    <link href="fdp-ressources/style/main.css" rel="stylesheet">
+    <link href="fdp-ressources/style/footer.css" rel="stylesheet">
 </head>
 <body>
 <div id="attributs">
-    <div id="image"><img alt="logo" height="109px" id="logo" src="assets/logo-espri.jpg" width="235px"></div>
+    <div id="image"><img alt="logo" height="109px" id="logo" src="fdp-ressources/assets/logo-espri.jpg" width="235px">
+    </div>
     <div id="infos"><p>Nom : </p>
         <p id="nom"></p>
         <p>Lignée : </p>
@@ -104,29 +105,51 @@
 
     <div class="saison   " id="hiver">
         <div class="saison-gauche  "></div>
+        <div class="saison-texte">
+            <p><strong>Hiver</strong></p>
+            <p>Coordination, Instinct, Mimer,
+                Modifier, Mouvement, Profiter...</p>
+        </div>
         <div class="saison-droite nymphe"><img alt="nymphe de l'hiver" class="nymphe" height="80px"
-                                               src="assets/nymphe-hiver.png"
+                                               src="fdp-ressources/assets/nymphe-hiver.png"
                                                width="80px"></div>
     </div>
     <div class="saison " id="printemps">
         <div class="saison-gauche  nymphe"><img alt="nymphe du printemps" class="nymphe" height="80px"
-                                                src="assets/nymphe-printemps.png" width="80px"></div>
-        <div class="saison-droite"></div>
+                                                src="fdp-ressources/assets/nymphe-printemps.png" width="80px"></div>
+        <div class="saison-texte">
+            <p><strong>Printemps</strong></p>
+            <p>Faux, Eviter, Pacifisme,
+                Perception, Tromper, Vérité...</p>
+        </div>
+        <div class="saison-droite "></div>
     </div>
     <div class="saison  " id="ete">
         <div class="saison-gauche nymphe">
             <img alt="nymphe de l'ete" class="nymphe" height="80px"
-                 src="assets/nymphe-ete.png" width="80px"></div>
-
-        <div class="saison-droite "></div>
+                 src="fdp-ressources/assets/nymphe-ete.png" width="80px"></div>
+        <div class="saison-texte">
+            <p><strong>Eté</strong></p>
+            <p>Emotion, Force, Interaction,
+                Rassembler, Sacrifice, Vitesse...</p>
+        </div>
+        <div class="saison-droite season-score "></div>
     </div>
-    <div class="devotion-text"><p><span><br>Dévotion : </span></p></div>
+    <div class="devotion-text"><p><span><br>Dévotion</span></p></div>
     <div class="saison   " id="temps"><p></p></div>
-
+    <div class="saison-texte">
+        <p></p>
+        <p></p>
+    </div>
     <div class="saison  " id="automne">
-        <div class="saison-gauche"></div>
+        <div class="saison-gauche "></div>
+        <div class="saison-texte">
+            <p><strong>Automne :</strong> </p>
+            <p>Acquérir, Construire, Définir,
+                Logique, Réparer, Protection...</p>
+        </div>
         <div class="saison-droite  nymphe"><img alt="nymphe de l'automne" class="nymphe" height="80px"
-                                                src="assets/nymphe-automne.png" width="80px"></div>
+                                                src="fdp-ressources/assets/nymphe-automne.png" width="80px"></div>
     </div>
 
     <div class=" seven magie-materiel" id="elements">
@@ -148,27 +171,29 @@
     <p id="maxime">Par ce présent, deviens mon enfant. Par ce cadeau, deviens mon héraut. Par ce don, sois Gardien de ma
         Saison Porte en ton âme ma Voix, mon savoir-faire. Prodigue-les au Monde, reforge son fer.</p>
 
-<div id="keywords-de-saison">
-    <img id="token-left" src="assets/Token_Automne_2cm_200pix.png" alt="token de saison" width="90px" width="90px">
-    <div id="keyword-container">
+    <div id="keywords-de-saison">
+        <img alt="token de saison" id="token-left" src="fdp-ressources/assets/Token_Automne_2cm_200pix.png" width="90px"
+             width="90px">
+        <div id="keyword-container">
 
-        <ul class="keyword">
-            <li>Résistance</li>
-            <li>Construire</li>
-            <li>Acquis</li>
-            <li>Préparer</li>
-            <li>Patience</li>
-        </ul>
-        <ul class="keyword">
-            <li>Gravité</li>
-            <li>Pragmatisme</li>
-            <li>Arrêter</li>
-            <li>Pierre</li>
-            <li>Conception</li>
-        </ul>
+            <ul class="keyword">
+                <li>Résistance</li>
+                <li>Construire</li>
+                <li>Acquis</li>
+                <li>Préparer</li>
+                <li>Patience</li>
+            </ul>
+            <ul class="keyword">
+                <li>Gravité</li>
+                <li>Pragmatisme</li>
+                <li>Arrêter</li>
+                <li>Pierre</li>
+                <li>Conception</li>
+            </ul>
+        </div>
+        <img alt="token de saison" id="token-right" src="fdp-ressources/assets/Token_Automne_2cm_200pix.png"
+             width="90px" width="90px">
     </div>
-    <img id="token-right" src="assets/Token_Automne_2cm_200pix.png" alt="token de saison" width="90px" width="90px">
-</div>
 </div>
 </body>
 </html>

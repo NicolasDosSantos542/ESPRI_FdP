@@ -1,8 +1,8 @@
 
 @font-face {
     font-family: "Merienda";
-  src: url("assets/font/Merienda-Regular.ttf") format("ttf"),
-    url("/assets/font/Merienda-Bold.ttf") format("ttf");
+  src: url("../assets/font/Merienda-Regular.ttf") format("ttf"),
+    url("/fdp-ressources/assets/font/Merienda-Bold.ttf") format("ttf");
 }
 body{
     font-family: "Merienda", serif;
