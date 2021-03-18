@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: "Merienda";
+  src: url("assets/font/Merienda-Regular.ttf") format("ttf"),
+    url("/assets/font/Merienda-Bold.ttf") format("ttf");
+}
+body{
+    font-family: "Merienda", serif;
+}
+
+#attributs {
+    display: flex;
+    border: 1px solid;
+    height: 150px;
+    
+
+}
+#attributs>div{
+    width: 25%;
+}
+#logo{
+display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    width: 235px;
+}

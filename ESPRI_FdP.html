@@ -2,23 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Fiche de perso ESPRI</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
-    <link href="style.css" rel="stylesheet">
+    <link href="head.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
 </head>
 <body>
 <div id="attributs">
-    <img alt="logo" height="109px" src="assets/logo.png" width="235px">
-    <div id="infos"></div>
-    <div id="acquis"></div>
-    <div id="inne"></div>
+    <div id="image"><img alt="logo" height="109px" id="logo" src="assets/logo-espri.jpg" width="235px"></div>
+    <div id="infos"><p>Nom : </p>
+        <p id="nom"></p>
+        <p>Lignée : </p>
+        <span id="lignee"></span>
+        <p>Age : </p><span id="age"></span></div>
+    <div id="role-et-talent">
+        <p>Rôle : <span id="role"></span></p>
+        <p>Talents : <span id="talents"></span></p>
+    </div>
+    <div id="atouts-et-defauts"><p>Atouts : <span $id="atouts"></span></p>
+        <p>Défauts : <span id="defauts"></span></p>
+    </div>
 </div>
-<div id="main>">
-    <div id="tables">
+<div class="main wrapper">
+    <div class="one" id="tables"><h3>Ame</h3>
         <div id="ame">
-            <div id="harmonie"></div>
-            <div id="rupture"></div>
+            <div id="harmonie"><p>Essence : Prévoyance</p>
+                <p>Harmonie :</p></div>
+            <div id="rupture"><p>Anathème : Versatilité</p>
+                <p></p>Rupture :
+            </div>
         </div>
 
         <div id="sante">
@@ -81,26 +95,31 @@
             </tr>
         </div>
     </div>
-    <div id="groupeDeSaisons">
-        <div class="saison" id="ete"></div>
-        <div class="saison" id="printemps"></div>
-        <div class="saison" id="automne"></div>
-        <div class="saison" id="hiver"></div>
-        <div id="temps"></div>
 
-    </div>
-    <div id="elements">
-        <div id="magie">
+    <div class="saison two  " id="ete">ete two</div>
+    <div class="saison three" id="printemps">printemps three</div>
+    <div class="saison four " id="automne">automne four</div>
+    <div class="saison five " id="hiver">hiver five</div>
+    <div class="saison six  " id="temps"><p>temps six</p></div>
+
+
+    <div class=" seven magie-materiel" id="elements">
+        <div id="magie"><h3>Magie</h3>
             <p>Talisman: </p>
             <p>Liturgie: </p>
             <p>Sortilèges: </p>
         </div>
-        <div id="materiel"></div>
-        <div id="footer">
+        <div id="materiel"><h3>Matériel</h3>
+            <ul id="liste-de-materiel">
 
+            </ul>
         </div>
     </div>
 
+
+</div>
+<div id="footer">
+</div>
 </div>
 </body>
 </html>
