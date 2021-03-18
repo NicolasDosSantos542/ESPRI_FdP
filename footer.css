@@ -1,4 +1,15 @@
 #footer{
     height: 200px;
-    background-color: #cecccc;
+}
+#maxime
+{
+    background-color: #c29999;
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+}
+.keyword{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
