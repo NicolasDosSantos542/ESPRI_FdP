@@ -21,15 +21,31 @@ table {
     display: flex;
     justify-content: space-around;
 }
-#ame div{
+#ame > div {
     width: 50%;
     margin: 10px;
     border-radius: 25px;
     padding: 10px;
 }
-#harmonie{
-    border: 4px solid #d9d9d9;
+
+#ame div div {
+    width: 100%;
 }
+
+#essence{
+    border: 4px solid #d9d9d9;
+
+}
+.ame-content{
+    margin:0 !important;
+    padding:0  !important;
+    display: flex;
+}
+
+.harmonie {
+    width: 70%
+}
+
 #rupture{
     border: 4px solid #5e266a;
 }
