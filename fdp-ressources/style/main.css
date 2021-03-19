@@ -64,31 +64,25 @@ table {
     justify-content: space-between;
     padding-top: 5px;
 }
-.saison-gauche{
+.saison-pastille{
     min-height: 80px;
     max-height:80px;
     max-width: 80px;
     min-width: 80px;
     border-radius: 50%;
-    border: 1px solid;
+    border: 1px solid lightgray;
     position: relative;
-    top: 2px;
-    right: 0;
-}
-.saison-droite{
-    min-height: 80px;
-    max-height:80px;
-    max-width: 80px;
-    min-width: 80px;
-    border-radius: 50%;
-    border: 1px solid;
-    position: relative;
-    top: 2px;
-    right: 0;
-}
+bottom: 2px;}
+
 .saison-texte{
 font-size: 0.8em;
     text-align: center;
+}
+.saison-score{
+    margin: 25px;
+    font-size: 3em;
+    position: relative;
+    bottom: 10px;
 }
 .nymphe{
     border-radius: 50%;

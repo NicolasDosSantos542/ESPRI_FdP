@@ -27,6 +27,11 @@ $(document).ready(function() {
         });
         
     })
+    $(".saison-pastille").click(function () {
+        let bob = prompt("quel est votre score")
+        $(this).children().html(bob)
+    
+    })
     
 
 })
