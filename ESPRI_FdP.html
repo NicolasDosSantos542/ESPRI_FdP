@@ -13,17 +13,41 @@
 <div id="attributs">
     <div id="image"><img alt="logo" height="109px" id="logo" src="fdp-ressources/assets/logo-espri.jpg" width="235px">
     </div>
-    <div id="infos"><p>Nom : </p>
-        <p id="nom"></p>
-        <p>Lignée : </p>
-        <span id="lignee"></span>
-        <p>Age : </p><span id="age"></span></div>
-    <div id="role-et-talent">
-        <p>Rôle : <span id="role"></span></p>
-        <p>Talents : <span id="talents"></span></p>
+    <div id="infos">
+        <div class="header-content"><p>Nom : </p>
+            <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+            <p class="info-perso"></p>
+        </div>
+
+        <div class="header-content"><p>Lignée :</p>
+            <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+            <p class="info-perso"></p>
+
+        </div>
+        <div class="header-content"><p>Age : </p>
+            <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+            <p class="info-perso"></p>
+
+        </div>
     </div>
-    <div id="atouts-et-defauts"><p>Atouts : <span $id="atouts"></span></p>
-        <p>Défauts : <span id="defauts"></span></p>
+    <div id="role-et-talent">
+        <div class="header-content"><p>Rôle : </p>
+            <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+            <p class="info-perso"></p>
+        </div>
+        <div class="header-content"><p>Talents : </p>
+            <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+            <p class="info-perso"></p>
+        </div>
+    </div>
+    <div id="atouts-et-defauts">
+        <div class="header-content"><p>Atouts : </p>
+            <img alt="icone plus" class="icone plus-liste" src="fdp-ressources/assets/plus.png">
+       <ul class="liste"></ul>
+        </div>
+        <div class="header-content"><p>Défauts : </p>
+            <img alt="icone plus" class="icone plus-liste" src="fdp-ressources/assets/plus.png">
+            <ul class="liste"></ul></div>
     </div>
 </div>
 <div class="main wrapper">
@@ -70,9 +94,9 @@
                 <th>Résonnance</th>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Robert le perso de michel</td>
+                <td>amicale teintée d'humour et de competition</td>
+                <td>3</td>
             </tr>
             <tr>
                 <td></td>
@@ -144,7 +168,7 @@
     <div class="saison  " id="automne">
         <div class="saison-gauche "></div>
         <div class="saison-texte">
-            <p><strong>Automne :</strong> </p>
+            <p><strong>Automne :</strong></p>
             <p>Acquérir, Construire, Définir,
                 Logique, Réparer, Protection...</p>
         </div>
