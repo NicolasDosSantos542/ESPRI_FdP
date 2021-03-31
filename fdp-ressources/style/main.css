@@ -17,6 +17,13 @@ table {
     border: 1px dotted black;
      height: 1em;
 }
+ input[type=text]{
+     border: none;
+     width: 100px;
+ }
+input[type=text]:focus{
+    border:1px solid white;
+}
 #ame{
     display: flex;
     justify-content: space-around;
