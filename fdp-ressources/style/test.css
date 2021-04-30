@@ -1,0 +1,25 @@
+body >div{
+    border: 1px solid black;
+
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+    grid-auto-rows: minmax(85px, auto);
+}
+.header{
+    grid-column: 1 / span 2;
+    grid-row: 1 ;
+}
+.left{
+    grid-column: 1;
+    grid-row: 2 / span 8 ;
+}
+.right{
+    grid-column: 2 /span 1;
+    grid-row: 2 / span 8 ;
+}
+.footer{
+    grid-column: 1 / span 2;
+    grid-row: 10 ;}

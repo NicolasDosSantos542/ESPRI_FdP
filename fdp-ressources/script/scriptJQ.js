@@ -32,6 +32,18 @@ $(document).ready(function() {
         $(this).children().html(bob)
     
     })
+
+  character = initpage(character)
+    console.log(character)
+    Object.entries(character).forEach(entry => {
+        const [key, value] = entry
+        // console.log(key, value);
+
+        $(`#${key}`).text(value)
+    });
+
+    console.log(localStorage)
+
     
 
 })

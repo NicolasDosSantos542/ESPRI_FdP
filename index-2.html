@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiche de perso ESPRI</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="fdp-ressources/script/save.js"></script>
+
+    <script src="fdp-ressources/script/scriptJQ.js"></script>
+
+   <!-- <script src="fdp-ressources/script/script.js"></script>-->
+    <link href="fdp-ressources/style/head.css" rel="stylesheet">
+    <link href="fdp-ressources/style/main.css" rel="stylesheet">
+    <link href="fdp-ressources/style/footer.css" rel="stylesheet">
+</head>
+<body>
+<h1>coucou</h1>
+<div id="attributs">
+    <div id="image"><img alt="logo" height="109px" id="logo" src="fdp-ressources/assets/logo-espri.jpg" width="235px">
+    </div>
+    <div id="infos">
+        <div class="header-content"><p>Nom : </p>
+            <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+            <p id="nom">sfd</p>
+
+        </div>
+
+        <div class="header-content"><p>Lignée :</p>
+            <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+            <p id="lignee"></p>
+
+        </div>
+        <div class="header-content"><p>Age : </p>
+            <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+            <p id="age"></p>
+
+        </div>
+    </div>
+    <div id="role-et-talent">
+        <div class="header-content"><p>Rôle : </p>
+            <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+            <p class="info-perso"></p>
+        </div>
+        <div class="header-content"><p>Talents : </p>
+            <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+            <p class="info-perso"></p>
+        </div>
+    </div>
+    <div id="atouts-et-defauts">
+        <div class="header-content"><p>Atouts : </p>
+            <img alt="icone plus" class="icone plus-liste" src="fdp-ressources/assets/plus.png">
+            <ul class="liste"></ul>
+        </div>
+        <div class="header-content"><p>Défauts : </p>
+            <img alt="icone plus" class="icone plus-liste" src="fdp-ressources/assets/plus.png">
+            <ul class="liste"></ul>
+        </div>
+    </div>
+</div>
+<div class="main wrapper">
+    <div class="espace-tables" id="tables">
+        <h3>Ame</h3>
+        <div id="ame">
+            <div id="essence">
+                <p>Essence : Prévoyance</p>
+                <div class="ame-content"><p class="harmonie">Harmonie : </p>
+                    <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+                    <p class="info-perso"></p>
+                </div>
+            </div>
+            <div id="rupture">
+                <p>Anathème : Versatilité</p>
+                <div class="ame-content"><p class="harmonie">Anathème : </p>
+                    <img alt="icone plus" class="icone plus" src="fdp-ressources/assets/plus.png">
+                    <p class="info-perso"></p>
+                </div>
+            </div>
+        </div>
+        <h3>Santé</h3>
+
+        <table id="sante">
+            <tr>
+                <th>Etat</th>
+                <th>Type</th>
+                <th>Intensité</th>
+            </tr>
+            <tr>
+                <td>Choqué (-1)</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Meurtri (-2)</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Brisé (-3)</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <h3>Relations</h3>
+
+        <table id="relations">
+            <tr>
+                <th>Nom</th>
+                <th>Nature</th>
+                <th>Résonnance</th>
+            </tr>
+            <tr>
+                <td>Robert le perso de michel</td>
+                <td>amicale teintée d'humour et de competition</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="saison   " id="hiver">
+        <div class="saison-pastille  "><p class=saison-score>2</p></div>
+        <div class="saison-texte">
+            <p><strong>Hiver</strong></p>
+            <p>Coordination, Instinct, Mimer,
+                Modifier, Mouvement, Profiter...</p>
+        </div>
+        <div class="saison-pastille nymphe">
+            <img alt="nymphe de l'hiver" class="nymphe" height="80px" src="fdp-ressources/assets/nymphe-hiver.png"
+                 width="80px"></div>
+    </div>
+    <div class="saison " id="printemps">
+        <div class="saison-pastille  nymphe">
+            <img alt="nymphe du printemps" class="nymphe" height="80px"
+                 src="fdp-ressources/assets/nymphe-printemps.png" width="80px"></div>
+        <div class="saison-texte">
+            <p><strong>Printemps</strong></p>
+            <p>Faux, Eviter, Pacifisme,
+                Perception, Tromper, Vérité...</p>
+        </div>
+        <div class="saison-pastille  "><p class=saison-score>2</p></div>
+    </div>
+    <div class="saison  " id="ete">
+        <div class="saison-pastille nymphe">
+            <img alt="nymphe de l'ete" class="nymphe" height="80px"
+                 src="fdp-ressources/assets/nymphe-ete.png" width="80px"></div>
+        <div class="saison-texte">
+            <p><strong>Eté</strong></p>
+            <p>Emotion, Force, Interaction,
+                Rassembler, Sacrifice, Vitesse...</p>
+        </div>
+        <div class="saison-pastille  "><p class=saison-score>2</p></div>
+    </div>
+    <div class="devotion-text"><p><span><br>Dévotion</span></p></div>
+    <div class="saison-pastille   " id="temps"><p class=saison-score>2</p></div>
+
+    <div class="saison  " id="automne">
+        <div class="saison-pastille  "><p class=saison-score>2</p></div>
+        <div class="saison-texte">
+            <p><strong>Automne :</strong></p>
+            <p>Acquérir, Construire, Définir,
+                Logique, Réparer, Protection...</p>
+        </div>
+        <div class="saison-pastille  nymphe">
+            <img alt="nymphe de l'automne" class="nymphe" height="80px"
+                 src="fdp-ressources/assets/nymphe-automne.png" width="80px"></div>
+    </div>
+
+    <div class=" seven magie-materiel" id="elements">
+        <div id="magie"><h3>Magie</h3>
+            <p>Talisman: </p>
+            <p>Liturgie: </p>
+            <p>Sortilèges: </p>
+        </div>
+        <div id="materiel"><h3>Matériel</h3>
+            <ul id="liste-de-materiel">
+
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+<div id="footer">
+    <p id="maxime">Par ce présent, deviens mon enfant. Par ce cadeau, deviens mon héraut. Par ce don, sois Gardien de ma
+        Saison Porte en ton âme ma Voix, mon savoir-faire. Prodigue-les au Monde, reforge son fer.</p>
+
+    <div id="keywords-de-saison">
+        <img alt="token de saison" id="token-left" src="fdp-ressources/assets/Token_Automne_2cm_200pix.png" width="90px"
+             width="90px">
+        <div id="keyword-container">
+
+            <ul class="keyword">
+                <li>Résistance</li>
+                <li>Construire</li>
+                <li>Acquis</li>
+                <li>Préparer</li>
+                <li>Patience</li>
+            </ul>
+            <ul class="keyword">
+                <li>Gravité</li>
+                <li>Pragmatisme</li>
+                <li>Arrêter</li>
+                <li>Pierre</li>
+                <li>Conception</li>
+            </ul>
+        </div>
+        <img alt="token de saison" id="token-right" src="fdp-ressources/assets/Token_Automne_2cm_200pix.png"
+             width="90px" width="90px">
+    </div>
+</div>
+</body>
+</html>
