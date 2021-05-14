@@ -1,8 +1,7 @@
-
 character = {
     idSaison: '5',
     id: '',
-    nom: 'bob',
+    nom: '',
     lignee: '',
     age: '',
     role: '',
@@ -57,12 +56,13 @@ emptyCharacter = {
 };
 
 function initpage(character) {
+    // localStorage.clear();
 
     if ('winter-char' && 'spring-char' && 'summer-char' && 'autumn-char' && 'time-char' in localStorage) {
-        console.log('already')
+        console.log('storage already here')
         character = JSON.parse(localStorage.getItem('winter-char'));
     } else {
-        console.log('not yet')
+        console.log('storage not yet here')
         const array = ['winter', 'spring', 'summer', 'autumn', 'time'];
         array.forEach(element => {
             character.idSaison = element;
@@ -72,14 +72,42 @@ function initpage(character) {
     return character;
 }
 
+function displayCharacterElement() {
+
+    let value = '';
+    let id = $(this).attr('id')
+    for (const property in character) {
+        if (property === id) {
+            value = character[property];
+        }
+    }
+
+    $(this).text(value)
+}
+
+function registerCharacterElement(dom, value) {
+    let id =dom.attr('id')
+    console.log(id)
+    for (const property in character) {
+        if (property === id) {
+             character[property]= value;
+        }
+    }
+    console.log(character)
+    let element = character.idSaison
+    localStorage.setItem(element + '-char', JSON.stringify(character));
+
+
+}
+
 $(document).ready(function () {
     // $('#nom').text(character.nom)
-/*    Object.entries(character).forEach(entry => {
-        const [key, value] = entry
-        console.log(key, value);
-        $(`#${key}`).text(value)
+    /*    Object.entries(character).forEach(entry => {
+            const [key, value] = entry
+            console.log(key, value);
+            $(`#${key}`).text(value)
 
-    });*/
+        });*/
     //initpage()
 
 });

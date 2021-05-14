@@ -1,13 +1,15 @@
 $(document).ready(function() {
-    $(".plus").click(function () {
+    $(".entry").click(function () {
         
-        $(this).next().html(`<input class="input"  type="text" placeholder="écrivez ici">`).focus()
+        $(this).html(`<input class="input"  type="text" placeholder="écrivez ici">`).focus()
         $('.input').focus();
+        let that = $(this)
         $('input').keypress(function(e){
             if( e.which === 13 ){
-         
-                $(this).parent().html($(this).val())
-                $(this).remove()
+                // console.log(that.attr('id'))
+                registerCharacterElement(that, $(this).val())
+                $(this).remove();
+                that.text($(this).val());
             }
         });
         
@@ -33,7 +35,7 @@ $(document).ready(function() {
     
     })
 
-  character = initpage(character)
+    character = initpage(character)
     console.log(character)
     Object.entries(character).forEach(entry => {
         const [key, value] = entry
@@ -42,7 +44,14 @@ $(document).ready(function() {
         $(`#${key}`).text(value)
     });
 
-    console.log(localStorage)
+
+
+    $(".entry").each(function(){
+        displayCharacterElement()
+        }
+
+    )
+
 
     
 
