@@ -72,28 +72,25 @@ function initpage(character) {
     return character;
 }
 
-function displayCharacterElement() {
+function displayCharacterElement(dom) {
 
-    let value = '';
-    let id = $(this).attr('id')
+
+    let id = dom.attr('id')
     for (const property in character) {
         if (property === id) {
-            value = character[property];
+            let value = character[property];
+            dom.text(value)
         }
     }
-
-    $(this).text(value)
 }
 
 function registerCharacterElement(dom, value) {
     let id =dom.attr('id')
-    console.log(id)
     for (const property in character) {
         if (property === id) {
              character[property]= value;
         }
     }
-    console.log(character)
     let element = character.idSaison
     localStorage.setItem(element + '-char', JSON.stringify(character));
 
